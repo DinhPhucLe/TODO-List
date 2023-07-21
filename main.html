@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="sus.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <div style="margin-bottom: 10px">
+        <p style="font-size: 35px; font-family: Arial;"><b>TODO List Demo App</b></p>
+        <div style="font-size: 17px; font-family: Arial">Do it now.</div>
+    </div>
+
+
+    <div>
+        <form style="display: flex;">
+            <input placeholder="Enter task" id="unique" type="text"
+                style="font-size: 16px; border-radius: 3px; width: 300px; margin-right: 170px">
+            
+            <button style="color: cyan; font-size: 16px; border: 1px cyan solid; background-color: white;
+                padding: 5px; border-radius: 3px;" onclick="addTasktoArray()" type="button"
+                id="AddTaskbutton">Add Task</button>
+
+
+            <script>
+                let press_enter = document.getElementById("unique");
+                press_enter.addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        document.getElementById("AddTaskbutton").click();
+                        event.preventDefault();
+                    }
+                });
+            </script>
+
+
+            
+            <button style="color: green; font-size: 16px; border: 1px green solid; background-color: white;
+                padding: 5px; border-radius: 3px; display: none;" 
+                type="button" id="CfEditButton">Edit</button>
+        </form>
+    </div>
+
+
+    <div class="row"
+        style="border-bottom: 2px grey solid; font-family: Arial">
+        <div style="width: 345px; font-size: 16px"><b>Task Name</b></div>
+        <div style="width: 100px; font-size: 16px"><b>Status</b></div>
+        <div style="width: 50px; font-size: 16px"><b>Edit</b></div>
+        <div style="width: 50px; font-size: 16px"><b>Remove</b></div>
+    </div>
+
+
+
+    <ul id="TaskList" style="list-style-type: none; padding-left: 0px;">
+        
+    </ul>
+
+
+    <!--
+    <div class="row">
+        <div class="taskname">Buy Grocery</div>
+
+        <div style="width: 100px;">
+            <button class="todo"
+                id="status" onclick="editStatus('status')">Todo</button>
+        </div>
+
+        <div style="width: 50px">
+            <button style="height: 35px; width: 35px; background-color: white; border: 1px cyan solid;
+                border-radius: 5px; color: cyan; font-size: 20px;">
+                <i class='fa fa-edit'></i>
+            </button>
+        </div>
+
+        <div style="width: 50px">
+            <button style="height: 35px; width: 35px; background-color: white; border: 1px grey solid;
+                border-radius: 5px; color: grey; font-size: 20px">
+                <i class='fa fa-trash'></i>
+            </button>
+        </div>
+    </div>
+    -->
+
+    
+</body>
+
+</html>

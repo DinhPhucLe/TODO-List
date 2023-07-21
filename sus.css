@@ -1,0 +1,101 @@
+.row{
+    display: flex;
+    width: fit-content;
+    border-bottom: 1px lightgrey solid;
+    padding-bottom: 15px;
+    margin-top: 15px;
+
+    text-align:center;
+    font-family: Arial;
+}
+
+.adjust-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inprogress{
+    height: 35px; 
+    width: fit-content; 
+    background-color: white; 
+    border: 1px yellow solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: yellow; 
+    border-radius: 5px;
+}
+
+.todo{
+    height: 35px; 
+    width: fit-content; 
+    background-color: white; 
+    border: 1px grey solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: grey; 
+    border-radius: 5px;
+}
+
+.complete{
+    height: 35px; 
+    width: fit-content; 
+    background-color: white; 
+    border: 1px darkgreen solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: darkgreen; 
+    border-radius: 5px;
+}
+
+.ordnum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; font-size: 16px;
+}
+
+.taskname{
+    width: 345px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 345px; font-size: 16px;
+    border: none;
+}
+
+.editbox{
+    height: 35px;
+    width: 35px;
+    background-color: white; 
+    border: 1px cyan solid;
+    border-radius: 5px;
+    color: cyan;
+    font-size: 20px;
+}
+
+.boxinedit{
+    height: 35px;
+    width: 35px;
+    background-color: orange; 
+    border: 1px cyan solid;
+    border-radius: 5px;
+    color: cyan;
+    font-size: 20px;
+}
+
+.trashbin{
+    height: 35px; 
+    width: 35px; 
+    background-color: white; 
+    border: 1px grey solid;
+    border-radius: 5px; 
+    color: grey; 
+    font-size: 20px;
+}
+
+.sttbox{width: 100px;}
+
+.edbox{width: 50px}
